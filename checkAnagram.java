@@ -36,8 +36,11 @@ public class checkAnagram
 	}
 	public static void main(String args[])
 	{
-		String s="test";
-		String s1="Tset";
+		Scanner obj=new Scanner(System.in);
+		String s=sc.next();
+		String s1=sc.next();
+		s=s.toLowerCase();
+		s1=s1.toLowerCase();
 		if(checkAnagram(s,s1))
 		{
 			System.out.println("Anagram");
